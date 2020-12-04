@@ -1,0 +1,11 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function autopop_theme($existing, $type, $theme, $path) {
+  return [
+    'autopop' => [
+      'variables' => ['test_var' => NULL],
+    ],
+  ];
+}

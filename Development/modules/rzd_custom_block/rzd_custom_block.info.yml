@@ -1,0 +1,6 @@
+name: RZD Custom Block 
+type: module
+description: 'RZD Custom Block Module builder'
+package: Custom
+version: 8.x
+core: 8.x

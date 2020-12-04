@@ -1,0 +1,57 @@
+.ui-widget-overlay
+{
+  opacity: .8 !important; /* Make sure to change both of these, as IE only sees the second one */
+  filter: Alpha(Opacity=80) !important;
+
+  background: rgb(50, 50, 50) !important; /* This will make it darker */
+  z-index:500;
+}
+#dialog{
+	display:none;
+}
+.ui-widget.ui-widget-content{
+	border-radius:3px;
+	background-color:#fff;
+	border:none;
+	padding:0px;
+	text-align:center;
+	padding-bottom:4em;
+}
+.ui-widget-header{
+	background-color:#fff;
+	border:none;
+	border-radius:none;
+}
+.ui-dialog-title{
+	text-transform:uppercase;
+	text-align:center;
+	font-size:30px;
+	margin:4em auto;
+}
+.ui-dialog-content{
+	padding:3em !important;
+}
+.ui-dialog .ui-dialog-titlebar-close{
+	right:1em;
+	height:35px;
+	width:35px;
+	background-color:#fff;
+	border:none;
+	background-image:url(../images/blue.png);
+	background-size:cover;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover{
+	opacity: .8;
+}
+#dialog h2{
+	font-size:2.7rem;
+	margin-bottom:1em;
+	text-transform:uppercase;
+}
+#dialog h4{
+	text-transform:uppercase;	
+}
+#dialog a{
+	font-size:30px;
+	color:#189ec2;
+}

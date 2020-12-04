@@ -1,0 +1,11 @@
+autopop:
+  version: 1.x
+  css:
+    layout:
+      css/auto.css: {}
+    theme:
+      css/auto.css: {}
+  js:
+    js/auto.js: {}
+  dependencies:
+    - core/jquery

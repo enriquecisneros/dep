@@ -1,0 +1,39 @@
+name: Danny Eaton Plumbing Main Template
+type: theme
+description: 'Custom made for DEP by Rick Zebra Designs'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+libraries:
+  - dep/bootstrap_cdn
+  - dep/global-styling
+
+regions:
+  autopop: 'Home Page Autopop'
+  masterlogo: 'Master Logo Area'
+  masternav:  'Master Nav Area'
+  hero:   'Front Page Hero'
+  front_gallery:  'Front Gallery'
+  front_service_area: 'Front Service Area'
+  front_testimonials: 'Front Testimonials'
+  front_quote_request:  'Front Quote Request'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  featured_bottom_first: 'Featured bottom first'
+  featured_bottom_second: 'Featured bottom second'
+  featured_bottom_third: 'Featured bottom third'
+  prefooter1: 'Prefooter Block 1'
+  prefooter2: 'Prefooter Block 2'
+  prefooter3: 'Prefooter Block 3'
+
+# Information added by Drupal.org packaging script on 2020-06-18
+version: '8.x-4.30'
+project: 'bootstrap_barrio'
+datestamp: 1592500698

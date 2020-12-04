@@ -1,0 +1,11 @@
+name = Modal Page
+description = Create modal for specifics pages.
+core = 7.x
+configure = admin/config/user-interface/modal-page
+
+; Information added by Drupal.org packaging script on 2017-04-06
+version = "7.x-1.1"
+core = "7.x"
+project = "modal_page"
+datestamp = "1491502286"
+

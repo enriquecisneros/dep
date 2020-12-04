@@ -1,0 +1,8 @@
+name: Autopop
+type: module
+dependencies: 
+  - block
+description: 'Custom Popup module'
+package: Custom
+version: 8.x
+core: 8.x

@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ *
+ * Example on how to alter theme settings form
+ */
+function bootstrap_barrio_subtheme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+}
+
+function dep_preprocess_page(&$variables) {
+  $sidebar_widths = 0;
+
+  if (!empty($variables['page']['sidebar_first'])) {
+    $sidebar_widths += theme_get_setting('bootstrap_barrio_sidebar_first_width');
+  }
+
+  if (!empty($variables['page']['sidebar_second'])) {
+    $sidebar_widths += theme_get_setting('bootstrap_barrio_sidebar_second_width');
+  }
+
+  if ($sidebar_widths > 0) {
+    $variables['content_attributes']['class'][] = 'col-md-' . (12 - $sidebar_widths);
+  }
+}
